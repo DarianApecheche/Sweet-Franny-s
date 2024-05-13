@@ -1,0 +1,16 @@
+@media sceen and (min-width : 320px){
+    .footer-contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .tel , .mail{
+        position: relative;
+    }
+}   
+.briem-hand{
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #fbf3ca;
+  }

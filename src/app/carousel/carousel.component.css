@@ -1,0 +1,13 @@
+.briem-hand{
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #fbf3ca;
+  }
+.background-image{
+    background: linear-gradient(rgb(0 0 0 / .5),rgb(0 0 0 /.5)), url(/assets/img/franny-carousel1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

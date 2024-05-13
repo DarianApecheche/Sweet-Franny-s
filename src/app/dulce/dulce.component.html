@@ -1,0 +1,21 @@
+<div class="dulce w-72 flex flex-col relative z-10 gap-5">
+    <div class="dulce-image overflow-hidden rounded-3xl">
+        <img class="hover:scale-150 duration-500 max-h-52 min-w-72 justify-center items-center" src="{{Pie.image}}" alt="Pie Piña">
+    </div>
+    <div class="culce-content ml-6 mr-6">
+        <div class="dulce-header">
+            <h1 class="hedvig-letters-serif-headers">{{Pie.name}} {{Pie.flavor}}</h1>
+        <hr>
+        <br>
+        </div>
+        <div class="dulce-description flex flex-row gap-9">
+           <div class="sizes flex flex-col gap-2">
+                <p *ngFor="let size of Pie.size" class="hedvig-letters-serif-pharagraps">- {{size}}cm de diámetro</p>
+           </div>
+           <div class="prices flex flex-col gap-2">
+                <p *ngFor="let value of Pie.value" class="hedvig-letters-serif-pharagraps">${{value}}</p>
+            <hr>
+           </div>
+        </div>
+    </div>
+</div>

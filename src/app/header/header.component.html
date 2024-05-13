@@ -1,0 +1,33 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@600&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+
+    <div class="flex flex-col w-full bg-[#fbf1c6] h-20 overflow-hidden fixed z-20">
+    
+        <div class="flex items-center justify-between px-14 h-full gap-10 sm:gap-7">
+            <div class="logo h-full flex justify-center items-center sm:justify-around text-center">
+                <div class="flex flex-row space-x-5 justify-center items-center text-center cursor-pointer">
+                    <h1 class="briem-hand text-[#6c3717] font-bold text-3xl md:text-4xl lg::text-5xl">Sweet</h1><h1 class="briem-hand text-[#6c3717] font-bold text-3xl sm:text-3xl md:text-4xl lg::text-5xl">Franny's</h1>  
+                </div>          <!-- <img class="rounded-full min-h-16 min-w-16 max-w-16 max-h-16" src="/assets/img/frannyLogo.jpg" alt=""> -->
+            </div>
+            <div [ngClass]="{'flex': sideMenuButton == true}" (click)="togleMenu(false)" class=" menu-icon flex sm:hidden right-0">
+                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="1.01em" height="1em" viewBox="0 0 1025 1024"><path fill="currentColor" d="M896.428 640h-768q-53 0-90.5-37.5T.428 512t37.5-90.5t90.5-37.5h768q53 0 90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5m0-384h-768q-53 0-90.5-37.5T.428 128t37.5-90.5t90.5-37.5h768q53 0 90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5m-768 512h768q53 0 90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5h-768q-53 0-90.5-37.5T.428 896t37.5-90.5t90.5-37.5"/></svg>
+            </div>
+            <div class="menu h-full items-center justify-center hidden sm:visible sm:gap-8 md:gap-16 lg:gap-36 sm:flex">
+                <a class=".hedvig-letters-serif cursor-pointer"  [ngClass]="{'text-[#de9b14]': currentPage==0}" (click)="setColor(0)" >Bienvenido</a>
+                <a class=".hedvig-letters-serif cursor-pointer" [ngClass]="{'text-[#de9b14]': currentPage==1}" (click)="setColor(1)" >Nuestros Productos</a>
+                <a class=".hedvig-letters-serif cursor-pointer" [ngClass]="{'text-[#de9b14]': currentPage==2}" (click)="setColor(2)" >Contactenos</a>
+            </div>
+        </div>
+    </div>
+    
+    <div [ngClass]="{'flex': sideMenuButton == false}" [ngClass]="{'hidden': sideMenuButton == true}" class="side-menu right-0 top-0 flex-col h-full bg-[#f3ca51] z-20 w-64 justify-between text-center duration-150 fixed">
+        <div class="menu-icon flex sm:hidden w-full justify-end pr-10 pt-10">
+            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" (click)="togleMenu(true)" width="1em" height="1em" viewBox="0 0 2048 2048"><path fill="currentColor" d="m1115 1024l690 691l-90 90l-691-690l-691 690l-90-90l690-691l-690-691l90-90l691 690l691-690l90 90z"/></svg>
+        </div>
+        <div class="menu flex flex-col gap-10">
+            <a class=".hedvig-letters-serif cursor-pointer"  [ngClass]="{'text-[#cf7e10]': currentPage==0}" (click)="setColor(0)" >Bienvenido</a>
+            <a class=".hedvig-letters-serif cursor-pointer" [ngClass]="{'text-[#cf7e10]': currentPage==1}" (click)="setColor(1)" >Nuestros Productos</a>
+            <a class=".hedvig-letters-serif cursor-pointer" [ngClass]="{'text-[#cf7e10]': currentPage==2}" (click)="setColor(2)" >Contactenos</a>
+        </div>
+    </div>

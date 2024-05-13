@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    background-color: #fbf3ca;
+    position: relative;
+}
+.briem-hand{
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+.hedvig-letters-serif-headers{
+    font-family: "Hedvig Letters Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    color: #f49d0c;
+    font-weight: bolder;
+    font-size: x-large;
+  }
